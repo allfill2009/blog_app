@@ -1,0 +1,3 @@
+class IpLogin < ApplicationRecord
+
+end
