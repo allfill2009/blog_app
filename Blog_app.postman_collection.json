@@ -1,0 +1,134 @@
+{
+	"info": {
+		"_postman_id": "efc1e8c3-55b7-451d-a259-4547768746d7",
+		"name": "Blog_app",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Create Post",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/v1/posts?user_id=1&header=ABC&content=Content",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"posts"
+					],
+					"query": [
+						{
+							"key": "user_id",
+							"value": "1"
+						},
+						{
+							"key": "header",
+							"value": "ABC"
+						},
+						{
+							"key": "content",
+							"value": "Content"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Mark",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/v1/marks?post_id=1&mark=5",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"marks"
+					],
+					"query": [
+						{
+							"key": "post_id",
+							"value": "1"
+						},
+						{
+							"key": "mark",
+							"value": "5"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Return Top N Marks",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/v1/top_marks?top_n=100",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"top_marks"
+					],
+					"query": [
+						{
+							"key": "top_n",
+							"value": "100"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Return IP And Logins",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/v1/ip_logins?logins[]=Login_1&logins[]=Login_0",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"ip_logins"
+					],
+					"query": [
+						{
+							"key": "logins[]",
+							"value": "Login_1"
+						},
+						{
+							"key": "logins[]",
+							"value": "Login_0"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
